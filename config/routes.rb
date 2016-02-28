@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :customers
+
   resources :order_items
 
   devise_for :admin_users, ActiveAdmin::Devise.config
